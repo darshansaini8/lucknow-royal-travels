@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Book a Taxi | Lucknow Royal Tours & Travels</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow light">WE'RE HERE TO HELP</span>
+        <h1>Let's plan your<br><em>next journey.</em></h1>
+        <p>Tell us your travel requirements and request a personalised taxi or tour quote.</p>
+        <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">GET IN TOUCH</span>
+            <h2>Tell us about <em>your trip.</em></h2>
+          </div>
+          <p>Complete the enquiry form. Your details will be prepared in a WhatsApp message for you to send.</p>
+        </div>
+
+        <div class="contact-grid">
+          <aside class="contact-panel reveal">
+            <h3>Booking assistance</h3>
+            <p>Contact the travel team to discuss your requirements.</p>
+
+            <div class="contact-detail">
+              <strong>PHONE / WHATSAPP</strong>
+              <a href="#" data-whatsapp>Message us to enquire</a>
+            </div>
+            <div class="contact-detail">
+              <strong>LOCATION</strong>
+              <span>Lucknow, Uttar Pradesh, India</span>
+            </div>
+            <div class="contact-detail">
+              <strong>SERVICES</strong>
+              <span>Local taxi, airport transfers, sightseeing and outstation travel.</span>
+            </div>
+            <div class="contact-detail">
+              <strong>BOOKING TIP</strong>
+              <span>Share your pickup, destination, travel date, passenger count and luggage needs.</span>
+            </div>
+          </aside>
+
+          <form class="contact-form reveal" id="contact-form">
+            <h3>Request a quote</h3>
+
+            <div class="form-row">
+              <label>
+                Your name *
+                <input name="name" placeholder="Full name" required maxlength="100">
+              </label>
+              <label>
+                Phone number *
+                <input name="phone" type="tel" placeholder="Your contact number"
+                  pattern="[+0-9() -]{8,20}" required>
+              </label>
+            </div>
+
+            <label>
+              Email address
+              <input name="email" type="email" placeholder="you@example.com">
+            </label>
+
+            <div class="form-row">
+              <label>
+                Service required *
+                <select name="service" required>
+                  <option value="">Select service</option>
+                  <option value="Hatchback">Hatchback</option>
+                  <option value="Sedan">Sedan</option>
+                  <option value="SUV">SUV</option>
+                  <option value="Premium SUV">Premium SUV</option>
+                  <option value="Tempo Traveller">Tempo Traveller</option>
+                  <option value="Outstation Taxi">Outstation Taxi</option>
+                  <option value="Airport Transfer">Airport Transfer</option>
+                  <option value="Local Sightseeing">Local Sightseeing</option>
+                  <option value="Custom Tour">Custom Tour</option>
+                </select>
+              </label>
+              <label>
+                Travel date
+                <input type="date" name="date" id="contact-date">
+              </label>
+            </div>
+
+            <label>
+              Tell us about your trip *
+              <textarea name="message"
+                placeholder="Pickup, destination, passengers, return trip and any other requirements..."
+                required maxlength="1500"></textarea>
+            </label>
+
+            <button class="btn btn-maroon" type="submit">
+              Send Enquiry on WhatsApp ↗
+            </button>
+            <p class="form-note">
+              Submitting opens WhatsApp. You must send the prepared message
+              to complete your enquiry.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>
